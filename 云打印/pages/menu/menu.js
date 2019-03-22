@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
+    //轮播图组件的数据
+    img_urls: [
+      '/images/1.jpg',
+      '/images/2.jpg',
+      '/images/3.jpg'
+    ],
+    indicatorDots: false,
+    autoplay: true,
+    interval: 3000,
+    duration: 1000,
+  },
 
+  //页面跳转up-file
+  file_tap: function () {
+    wx.navigateTo({
+      url: '../up-file/up-file'
+    });
   },
 
   /**

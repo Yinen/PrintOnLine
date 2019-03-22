@@ -1,23 +1,18 @@
-// pages/mine/mine.js
-const app = getApp()
+// pages/up-file/up-file.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nick_name: '',
-    header_url: '',
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      nick_name: app.globalData.userInfo.nickName,
-      header_url: app.globalData.userInfo.avatarUrl,
-    })
+
   },
 
   /**
